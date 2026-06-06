@@ -26,7 +26,21 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    printf("Integer literal: %d, Size: %lu bytes\n", 10, sizeof(10));
+    printf("Float literal: %f, Size: %lu bytes\n", 3.14, sizeof(3.14));
+    printf("Character literal: %c, Size: %lu bytes\n", 'A', sizeof('A'));
+    printf("String literal: %s, Size: %lu bytes\n", "Hello C", sizeof("Hello C"));
+
+    return 0;
+}
+```
 # Output:
+<img width="588" height="284" alt="image" src="https://github.com/user-attachments/assets/5052bd02-b3e5-4ee8-acec-e157431942d3" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +71,23 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+```
+#include <stdio.h>
+
+#define PI 3.14159
+
+int main() {
+    const int DAYS = 7;
+
+    printf("Value of Macro Constant PI: %f\n", PI);
+    printf("Value of Constant Variable DAYS: %d\n", DAYS);
+
+    return 0;
+}
+```
 # Output:
+<img width="487" height="228" alt="image" src="https://github.com/user-attachments/assets/29eb9c05-b66a-4a63-9d16-e23a462743d1" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,7 +111,28 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int num = 10;
+    float percentage = 75.5;
+    double salary = 50000.12345;
+    char grade = 'A';
+
+    printf("Integer value: %d\n", num);
+    printf("Float value: %f\n", percentage);
+    printf("Double value: %lf\n", salary);
+    printf("Character value: %c\n", grade);
+
+    return 0;
+}
+```
+
 # Output:
+<img width="450" height="292" alt="image" src="https://github.com/user-attachments/assets/5592b5e1-605b-4dec-9454-e8b1492c57da" />
+
+
 # Result: 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
@@ -120,7 +171,35 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("Sum: %d\n", a + b);
+    printf("Difference: %d\n", a - b);
+    printf("Product: %d\n", a * b);
+    printf("Quotient: %d\n", a / b);
+    printf("Remainder: %d\n", a % b);
+
+    printf("Bitwise AND: %d\n", a & b);
+    printf("Bitwise OR: %d\n", a | b);
+    printf("Bitwise XOR: %d\n", a ^ b);
+    printf("Left Shift: %d\n", a << b);
+    printf("Right Shift: %d\n", a >> b);
+    printf("Bitwise NOT of a: %d\n", ~a);
+    printf("Bitwise NOT of b: %d\n", ~b);
+
+    return 0;
+}
+```
 # Output:
+<img width="472" height="538" alt="image" src="https://github.com/user-attachments/assets/7a374f71-68d8-40f3-a850-fa691ffa5028" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +244,40 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    char ch;
+    
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    (ch >= '0' && ch <= '9') ?
+        printf("Digit") :
+    ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+        ((ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U') ?
+            printf("Vowel") : printf("Consonant")) :
+        printf("Special Symbol");
+
+    return 0;
+}
+```
 # Output:
+<img width="387" height="198" alt="image" src="https://github.com/user-attachments/assets/764e4981-7623-4b79-ae1e-b87013d4511a" />
+
+
+
+<img width="397" height="210" alt="image" src="https://github.com/user-attachments/assets/1f816aeb-7a55-4c8b-a582-0f02b0193ba8" />
+
+
+
+
+<img width="387" height="207" alt="image" src="https://github.com/user-attachments/assets/16a5d231-25d3-4890-b635-99a7484be27d" />
+
+
+
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
